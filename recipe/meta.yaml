@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
+  noarch: python >=3.6
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,13 +22,13 @@ requirements:
     - python
     - setuptools
   run:
-    - python
+    - python >=3.6
     - setuptools
-    - h5py >=2.9
-    - numpy >=1.16
-    - scipy >=1.1
-    - pandas >=0.23
-    - ruamel.yaml >=0.15
+    - h5py >=2.9,<3
+    - numpy >=1.16,<1.19.4
+    - scipy >=1.1,<2
+    - pandas >=0.23,<1
+    - ruamel.yaml >=0.15,<1
 
 test:
   imports:
