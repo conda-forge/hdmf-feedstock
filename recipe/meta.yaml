@@ -1,6 +1,6 @@
 {% set name = "hdmf" %}
-{% set version = "3.4.7" %}
-{% set sha256 = "8a100e44e12b169741caaaf591db112e945773fee2efd3193d67417fdc8b832a" %}
+{% set version = "3.5.0" %}
+{% set sha256 = "640f559e5f4b0cc42beb30044a2db7f7603e9e40a39e3eb7d603711036775541" %}
 
 package:
   name: {{ name|lower }}
@@ -52,3 +52,4 @@ extra:
     - ajtritt
     - rly
     - oruebel
+    - mavaylon1
