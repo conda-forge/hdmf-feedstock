@@ -1,11 +1,11 @@
-About hdmf
-==========
+About hdmf-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdmf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hdmf-dev/hdmf
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hdmf-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python API for working with hierarchical object data
 
