@@ -2,6 +2,7 @@
 {% set version = "3.8.0" %}
 {% set sha256 = "6ddbddac02fbd87eb5836dfb521c380f8cef949e13742848e65f7893a3cdd449" %}
 
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,16 +21,18 @@ requirements:
   host:
     - pip
     - python
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.7
+    - python >=3.8
     - h5py >=2.10
     - jsonschema >=2.6.0
-    - numpy >=1.16
+    - numpy >=1.18
     - pandas >=1.0.5
     - ruamel.yaml >=0.16
-    - scipy >=1.1
-    - setuptools
+    - scipy >=1.4
+    - hatchling
+    - hatch-vcs
 
 test:
   imports:
