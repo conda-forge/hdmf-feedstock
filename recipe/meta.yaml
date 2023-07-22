@@ -1,6 +1,6 @@
 {% set name = "hdmf" %}
-{% set version = "3.6.1" %}
-{% set sha256 = "bc5bbb17ee5a381ee9b6596644de1feabc77561356f5146a1154f8adbc89f911" %}
+{% set version = "3.7.0" %}
+{% set sha256 = "b3507f335bdba0e16fa3c515546acdb618fe2e909e1cda02e1fd40f3765afbb2" %}
 
 package:
   name: {{ name|lower }}
@@ -20,16 +20,18 @@ requirements:
   host:
     - pip
     - python
-    - setuptools
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.7
+    - python >=3.8
     - h5py >=2.10
     - jsonschema >=2.6.0
-    - numpy >=1.16
+    - numpy >=1.18
     - pandas >=1.0.5
     - ruamel.yaml >=0.16
-    - scipy >=1.1
-    - setuptools
+    - scipy >=1.4
+    - hatchling
+    - hatch-vcs
 
 test:
   imports:
