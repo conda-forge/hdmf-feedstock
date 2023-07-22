@@ -21,6 +21,7 @@ requirements:
     - pip
     - python
     - hatchling
+    - hatch-vcs
   run:
     - python >=3.8
     - h5py >=2.10
@@ -30,6 +31,7 @@ requirements:
     - ruamel.yaml >=0.16
     - scipy >=1.4
     - hatchling
+    - hatch-vcs
 
 test:
   imports:
