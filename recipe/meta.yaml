@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -31,8 +31,6 @@ requirements:
     - pandas >=1.0.5
     - ruamel.yaml >=0.16
     - scipy >=1.4
-    - hatchling
-    - hatch-vcs
 
 test:
   imports:
