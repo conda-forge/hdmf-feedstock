@@ -1,6 +1,6 @@
 {% set name = "hdmf" %}
-{% set version = "3.8.0" %}
-{% set sha256 = "6ddbddac02fbd87eb5836dfb521c380f8cef949e13742848e65f7893a3cdd449" %}
+{% set version = "3.8.1" %}
+{% set sha256 = "d32843a8e5fcdb5342a6c63279f24c7aa38c80728bbd556255421265280410c3" %}
 
 
 package:
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - validate_hdmf_spec = hdmf.testing.validate_spec:main
