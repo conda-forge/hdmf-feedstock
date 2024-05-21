@@ -41,7 +41,7 @@ test:
   source_files:
     - tests
   requires:
-    - pytest
+    - pytest <8.0
   imports:
     - hdmf
     - hdmf.common
