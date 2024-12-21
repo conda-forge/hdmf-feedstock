@@ -20,9 +20,6 @@ build:
     - validate_hdmf_spec = hdmf.testing.validate_spec:main
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
     - python {{ python_min }}
