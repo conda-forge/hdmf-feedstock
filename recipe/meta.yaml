@@ -1,7 +1,7 @@
 {% set name = "hdmf" %}
 {% set version = "4.0.0" %}
 {% set sha256 = "97ee9a62028b766bee69513d70bfdced2fb25bde29afc1f5620249acef28e778" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -27,19 +27,19 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - h5py >=2.10
-    - jsonschema >=2.6.0
-    - numpy >=1.18
-    - pandas >=1.0.5
+    - h5py >=3.1
+    - jsonschema >=3.2.0
+    - numpy >=1.19.3
+    - pandas >=1.2.0
     - ruamel.yaml >=0.16
-    - scipy >=1.4
 
 test:
   source_files:
     - tests
   requires:
-    - pytest <8.0
+    - pytest
     - python {{ python_min }}
+    # NOTE: running tests with optional dependencies installed is not tested
   imports:
     - hdmf
     - hdmf.common
@@ -56,7 +56,7 @@ about:
     for working with hierarchical data. It provides APIs for specifying data
     models, reading and writing data to different storage backends, and
     representing data with Python object.
-  doc_url: http://hdmf.readthedocs.io/en/latest/
+  doc_url: http://hdmf.readthedocs.io
 
 extra:
   recipe-maintainers:
