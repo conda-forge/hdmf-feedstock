@@ -27,18 +27,17 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - h5py >=2.10
-    - jsonschema >=2.6.0
-    - numpy >=1.18
-    - pandas >=1.0.5
+    - h5py >=3.1
+    - jsonschema >=3.2
+    - numpy >=1.19.3
+    - pandas >=1.2.0
     - ruamel.yaml >=0.16
-    - scipy >=1.4
 
 test:
   source_files:
     - tests
   requires:
-    - pytest <8.0
+    - pytest
     - python {{ python_min }}
   imports:
     - hdmf
