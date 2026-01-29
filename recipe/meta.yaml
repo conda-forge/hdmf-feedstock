@@ -1,6 +1,6 @@
 {% set name = "hdmf" %}
-{% set version = "4.2.0" %}
-{% set sha256 = "3555fb39874544ec3cd741b9eccd8db2339fae000e5a51859e5c20c3b0c6d4b5" %}
+{% set version = "4.3.1" %}
+{% set sha256 = "dd16335c1a2fd38c3b9f01ed2b9be8a80536cc42d7b72f49a16bad9999668b99" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -30,7 +30,7 @@ requirements:
     - h5py >=3.1
     - jsonschema >=3.2
     - numpy >=1.19.3
-    - pandas >=1.2.0
+    - pandas >=1.2.0,<3
     - ruamel.yaml >=0.16
 
 test:
