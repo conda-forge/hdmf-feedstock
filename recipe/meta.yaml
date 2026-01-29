@@ -30,7 +30,7 @@ requirements:
     - h5py >=3.1
     - jsonschema >=3.2
     - numpy >=1.19.3
-    - pandas >=1.2.0
+    - pandas >=1.2.0,<3
     - ruamel.yaml >=0.16
 
 test:
