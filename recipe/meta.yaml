@@ -1,7 +1,7 @@
 {% set name = "hdmf" %}
 {% set version = "5.0.1" %}
 {% set sha256 = "839342ee1a0cfd33162eed1ffdd4448d0b6f8a8d8a8d4101d6bf6e466fea4429" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -27,10 +27,10 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - h5py >=3.1
-    - jsonschema >=3.2
-    - numpy >=1.19.3
-    - pandas >=1.2.0,<3
+    - h5py >=3.6.0
+    - jsonschema >=3.2.0
+    - numpy >=1.22.0
+    - pandas >=1.4.0,<3
     - ruamel.yaml >=0.16
 
 test:
