@@ -152,7 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@ajtritt](https://github.com/ajtritt/)
-* [@mavaylon1](https://github.com/mavaylon1/)
 * [@oruebel](https://github.com/oruebel/)
 * [@rly](https://github.com/rly/)
 
