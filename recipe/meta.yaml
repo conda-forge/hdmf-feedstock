@@ -1,6 +1,6 @@
 {% set name = "hdmf" %}
-{% set version = "6.1.0" %}
-{% set sha256 = "545b583ee667de2b930520555e28e5cf3bfea2706bb92880277d21f05f7ad5f7" %}
+{% set version = "6.2.0" %}
+{% set sha256 = "47dd0d0ebdf834b0cc5d1fdbe6b73d718549cffa489e47f68f638a4add20b65d" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
